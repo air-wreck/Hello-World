@@ -6,7 +6,7 @@ _syscall:
 _start:
   push   dword     len
   push   dword     msg
-  push   dword     1
+  push   dword     0x01
   mov    eax,      0x04
   call   _syscall
   add    esp,      0x0c
